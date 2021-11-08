@@ -1,6 +1,9 @@
 fun main() {
-    println("What's your name?")
+    println("Hello!")
+}
 
-    val name = readLine()
-    println("Hello, $name!")
+class Main {
+    fun sumOfTwoNumbers(firstNumber: Int, secondNumber: Int): Int {
+        return firstNumber + secondNumber
+    }
 }
