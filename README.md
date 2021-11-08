@@ -13,14 +13,13 @@ This repo will serve as a starting point for your code challenge. Feel free to c
 
 ## Local setup
 
-## Run sample CLI command
-
 ## Run the application
 Click the Run icon in the gutter and select Run 'MainKt' or press Ctrl+Shift+F10
 
 When the program has started, the Run tool window opens, where you can review the output and interact with the program.
 
 ## Run tests
+Click the Run icon in the gutter and select Run 'MainKtTest'
 
 ## Tools
 Feel free to use all the necessary tools you need in order to accomplish this challenge.
