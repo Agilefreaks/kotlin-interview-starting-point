@@ -1,29 +1,44 @@
-# Kotlin Interview Starting Point
+## Overview
 
-This repo will serve as a starting point for your code challenge. Feel free to change anything in order to complete it: Change framework, other tests, new libraries etc.
+You have been hired by a company that builds a app for coffee addicts.  You are 
+responsible for taking the user’s location and returning a list of the three closest coffee shops.
 
-## Get this repo
+## Input
 
-- Fork this repo
-- Clone your fork
+The coffee shop list is a comma separated file with rows of the following form:
+`Name,Y Coordinate,X Coordinate`
 
-## Prerequisites
-- Have IntelliJ installed: https://www.jetbrains.com/help/idea/installation-guide.html#standalone
-- Have Android Studio installed: https://developer.android.com/studio/install (Nice to have)
+The quality of data in this list of coffee shops may vary.  Malformed entries should cause the 
+program to exit appropriately. 
 
-## Local setup
+Your program will be executed directly from the command line and will be provided three 
+arguments in the following order:
+`<user x coordinate> <user y coordinate> <shop data url>`
 
-## Run the application
-Click the Run icon in the gutter and select Run 'MainKt' or press Ctrl+Shift+F10
+Notice that the data file will be read from an network location (ex: https://raw.githubusercontent.com/Agilefreaks/test_oop/master/coffee_shops.csv)
 
-When the program has started, the Run tool window opens, where you can review the output and interact with the program.
+## Output
 
-## Run tests
-Click the Run icon in the gutter and select Run 'MainKtTest'
+Write a program that takes the user’s coordinates encoded as listed above and prints out a 
+newline­separated list of the three closest coffee shops (including distance from the user) in 
+order of closest to farthest.  These distances should be rounded to four decimal places. 
 
-## Tools
-Feel free to use all the necessary tools you need in order to accomplish this challenge.
+Assume all coordinates lie on a plane.
 
----
+The output should be very simple no UI is required.
 
-Good luck!
+## Example
+
+Using the [coffee_shops.csv](coffee_shops.csv)
+
+__Input__
+
+`47.6 -122.4 coffee_shops.csv`
+
+__Expected output__
+
+```
+Starbucks Seattle2,0.0645
+Starbucks Seattle,0.0861
+Starbucks SF,10.0793
+```
