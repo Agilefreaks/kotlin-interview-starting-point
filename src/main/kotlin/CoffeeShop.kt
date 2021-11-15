@@ -1,0 +1,1 @@
+data class CoffeShop(val name: String, val coordinates: Coordinates)

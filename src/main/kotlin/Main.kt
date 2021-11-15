@@ -1,9 +1,6 @@
-fun main() {
-    println("Hello!")
-}
 
-class Main {
-    fun sumOfTwoNumbers(firstNumber: Int, secondNumber: Int): Int {
-        return firstNumber + secondNumber
-    }
+fun main()
+{
+    val coffeeFinder = CoffeeFinder()
+    coffeeFinder.listen()
 }
