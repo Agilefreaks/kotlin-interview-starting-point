@@ -13,7 +13,6 @@ repositories {
 }
 
 dependencies {
-    implementation("com.opencsv:opencsv:5.5.2")
     testImplementation(kotlin("test"))
 }
 
